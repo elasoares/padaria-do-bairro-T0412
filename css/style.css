@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #faf6f0;
+    color: #1b263b;
+}
+
+/* Topo aviso */
+.topo-aviso{
+    background-color: #bf8d36;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 2px;
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.topo-aviso-clicavel{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.topo-aviso-clicavel:hover{
+    text-decoration: underline;
+    color: #2c363f;
+}
+
+/* Cabeçalho */
+.cabecalho{
+    background-color: #faf6f0;
+    border-bottom: #2c363f solid 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+.logo{
+    border-radius: 50px;
+}
+
+.cabecalho nav{
+    width: 80%;
+}
+
+.menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    height: 50px;
+}
+
+.menu li>a{
+    text-decoration: none;
+    color: #2c363f;
+    font-weight: 500px;
+}
+
+.menu li>a:hover{
+    color: #bf8d36;
+}
+
+/* banner */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+}
+.banner-texto{
+    width: 40%;
+}
+.banner-texto h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner-texto p{
+    font-size: 17px;
+    margin-bottom: 15px;
+
+}
+
+.banner-btn a{
+    text-decoration: none;
+    display:inline-block;
+    padding: 10px 28px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.banner-btn-principal{
+    background-color: #bf8d36;
+    color: #fff;
+}
+.banner-btn-secundario{
+    border: 1px #bf8d36 solid;
+    color: #bf8d36;
+}
+
+.banner-btn-principal:hover{
+    border: 1px #bf8d36 solid;
+    background-color: transparent;
+    color: #bf8d36;
+}
+
+.banner-btn-secundario:hover{
+    background-color: #bf8d36;
+    color: #fff;
+}
+
+
+.banner-img{
+    width: 400px;
+    border-radius: 15px;
+}
+
+/* Produtos */
+.secao-produto{
+    padding: 60px 20px;
+}
+
+.container-cards-produto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.cards-produto{
+    background-color: #fff;
+    border-radius: 16px;
+    width: 220px;
+    height: 330px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;  
+    transition: transform 0.2s;
+    font-family: 'Roboto Mono';
+}
+
+.cards-produto:hover{
+    transform:translateY(-6px);
+}
+
+.cards-produto img{
+    width: 100%;
+    height: 150px;
+    border-radius: 16px 16px 0 0;
+}
+
+.container-cards-produto-texto{
+    padding: 5px;
+}
+
+.cards-produto-categoria{
+    font-size: 11px;
+    text-transform:uppercase;
+    color:#bf8d36;
+    background-color: #bf8d3625;
+    width: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.container-cards-produto-texto h3{
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.cards-produto-descricao{
+    color:#1b263b;
+    min-height: 55px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #588157;
+}
+
+.container-card-btn{
+    width: 100%;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.card-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #bf8d36;
+    padding: 2px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-btn:hover{
+    color: #bf8d36;
+    background-color: transparent;
+    border: 1px solid #bf8d36;
+}

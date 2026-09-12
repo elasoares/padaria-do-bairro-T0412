@@ -4,29 +4,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <title>Padaria do Sr. José</title>
+        <link rel="stylesheet" href="./css/style.css"/>
     </head>
 
     <body>
-        
-        <header>
-            <img 
+        <div class="topo-aviso">
+            Assado fresquinho toda manhã. 
+            <a href="pedidos.html" class="topo-aviso-clicavel">
+                Faça seu pedido pelo site!
+            </a>
+        </div>
+        <header class="cabecalho">
+            <a href="index.html">
+                <img 
+                class="logo"
                 src="./image/logo.jpg" 
                 alt="Logo da empresa" 
                 width="50" 
                 height="50"/>
-            <h1>Padaria do Sr. José</h1>   
+            </a>
+            
             <nav>
-                <ul>
+                <menu class="menu">
+                    <li> <a href="index.html">Início</a> </li>
                     <li> <a href="#sobre">Sobre</a> </li>
                     <li> <a href="#produto">Produto</a> </li>
-                    <li><a href="#diferenciais">Diferenciais</a></li>
-                    <li> <a href="#contato">Contato</a> </li>
-                </ul>
+                    <li> <a href="contato.html">Contato</a> </li>
+                    <li> <a href="feedback.html">Feedback</a> </li>
+                </menu>
             </nav>
         </header>
 
+        
+
         <main>
-            <section id="sobre">
+            <section class="banner">
+            <div class="banner-texto">
+                <h1>Feito Fresco. <br/> Feito para adoçar <br> seus momentos.</h1>
+                <p>
+                    Descubra o prazer de pães artesanais, doces e bolos feitos toda manhã
+                    com ingredientes premium e muito carinho.
+                </p>
+                <div class="banner-btn">
+                    <a href="pedidos.html" class="banner-btn-principal">Fazer Pedido</a>
+                    <a href="#produto" class="banner-btn-secundario">Ver Produtos</a>
+                </div> 
+            </div>
+
+            <div>
+                <img 
+                class="banner-img"
+                src="./image/mesa-bolo-pães.jpg" 
+                alt="mesa com bolos, pães, 
+                doces e salgados"
+                />
+            </div>
+        </section>
+            <!-- <section id="sobre">
                 <h2>Sobre nós</h2>
                 <iframe width="560" height="315" 
                 src="https://www.youtube.com/embed/BVY_yumzGYI?si=bZVZs-h-JPHEZVTW&amp;controls=0" 
@@ -53,87 +87,69 @@
                     line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", 
                     comes from a line in section 1.10.32.
                 </p>
+            </section> -->
+
+            <section id="produto" class="secao-produto">
+                <h2>Um Sabor para Cada Desejo</h2>
+                <p>Escolha o seu favorito e faça o pedido!</p>
+
+                <div class="container-cards-produto">
+                    <article class="cards-produto">
+                        <img src="./image/1.png" alt="Cafeteria" width="150"/>
+                        <div class="container-cards-produto-texto">
+                            <p class="cards-produto-categoria">Pães</p>
+                            <h3>Pão francês</h3>
+                            <p class="cards-produto-descricao">Quentinho e crocante, assado várias vezes ao dia.</p>
+                            <p class="preco">R$ 1,20 </p>
+                            <div class="container-card-btn">
+                                <a href="pedidos.html" class="card-btn">Pedir +</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cards-produto">
+                        <img src="./image/2.png" alt="Cafeteria" width="150"/>
+                        <div class="container-cards-produto-texto">
+                            <p class="cards-produto-categoria">Pães</p>
+                            <h3>Pão de açúcar</h3>
+                            <p class="cards-produto-descricao">Quentinho e macio, com cobertura de açucar.</p>
+                            <p class="preco">R$ 1,20 </p>
+                            <div class="container-card-btn">
+                                <a href="pedidos.html" class="card-btn">Pedir +</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-produto">
+                        <img src="./image/3.png" alt="Cafeteria" width="150"/>
+                        <div class="container-cards-produto-texto">
+                            <p class="cards-produto-categoria">Pães</p>
+                            <h3>Croissant</h3>
+                            <p class="cards-produto-descricao">Quentinho, crocante e recheado, assado várias vezes ao dia.</p>
+                            <p class="preco">R$ 1,20 </p>
+                            <div class="container-card-btn">
+                                <a href="pedidos.html" class="card-btn">Pedir +</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-produto">
+                        <img src="./image/4.png" alt="Cafeteria" width="150"/>
+                        <div class="container-cards-produto-texto">
+                            <p class="cards-produto-categoria">Bolos</p>
+                            <h3>Bolo de chocolate</h3>
+                            <p class="cards-produto-descricao">Feito com chocolate de cacau, macio e perfeito para tomar com café.</p>
+                            <p class="preco">R$ 1,20 </p>
+                            
+                            <div class="container-card-btn">
+                                <a href="pedidos.html" class="card-btn">Pedir +</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
             </section>
 
-            <section id="produto">
-                <h2>Nossos produtos</h2>
-
-                <img src="./image/1.png" alt="Cafeteria" width="150"/>
-                <img src="./image/2.png" alt="Cafeteria" width="150"/>
-                <img src="./image/3.png" alt="Cafeteria" width="150"/>
-                <img src="./image/4.png" alt="Cafeteria" width="150"/>
-
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Categoria</th>
-                            <th>Produto</th>
-                            <th>Descrição</th>
-                            <th>Preço</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Pães</td>
-                            <td>Pão francês</td>
-                            <td>Quentinho e crocante, assado várias vezes ao dia.</td>
-                            <td>R$ 1,20</td>
-                        </tr>
-                        <tr>
-                            <td>Pães</td>
-                            <td>Pão de açúcar</td>
-                            <td>Quentinho e macio, com cobertura de açucar.</td>
-                            <td>R$ 1,80</td>
-                        </tr>
-                        <tr>
-                            <td>Pães</td>
-                            <td>Croissant</td>
-                            <td>Quentinho, crocante e recheado, assado várias vezes ao dia.</td>
-                            <td>R$ 2,50</td>
-                        </tr>
-                        <tr>
-                            <td>Bolos</td>
-                            <td>Bolo de chocolate</td>
-                            <td>Feito com chocolate de cacau, macio e perfeito para tomar com café.</td>
-                            <td>R$ 16,00</td>
-                        </tr>
-                        <tr>
-                            <td>Salgados</td>
-                            <td>Coxinha</td>
-                            <td>Massa quentinha e recheada com diversos sabores.</td>
-                            <td>R$ 4,50</td>
-                        </tr>
-                        <tr>
-                            <td>Salgados</td>
-                            <td>Pastel de queijo</td>
-                            <td>Massa quentinha e recheada.</td>
-                            <td>R$ 6,50</td>
-                        </tr>
-                        <tr>
-                            <td>Salgados</td>
-                            <td>Esfirra</td>
-                            <td>Massa quentinha e recheada.</td>
-                            <td>R$ 1,50</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>Destaque da casa</h3>
-                <p>
-                    Nosso Bolo de fubá é o preferido da clientela: feito com fubá de milho, 
-                    leite e ovos, perfeito para acompanhar o café da manhã ou o lanche da tarde.
-                </p>
-            </section>
-
-            <section id="diferenciais">
-                <h2>Diferenciais</h2>
-                <p>O que faz da nossa padaria um lugar especial:</p>
-                <ul>
-                    <li>🥬 Ingredientes frescos diários</li>
-                    <li>📜 Receitas tradicionais</li>
-                    <li>🤝 Atendimento personalizado</li>
-                </ul>
-            </section>
 
             <section id="contato">
                 <h2>Localização e horário</h2>
@@ -148,14 +164,9 @@
                     >
                 </iframe>
 
-                <h3>Horário de Funcionamento</h3>
-                <ol>
-                    <li>Segunda a Sexta: 6h às 19h</li>
-                    <li>Sábado: 6h às 16h</li>
-                    <li>Domingo: 7h às 12h</li>
-                </ol>
-
             </section>
+
+
         </main>
 
         <footer>
