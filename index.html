@@ -149,9 +149,15 @@
                             <h3>Croissant</h3>
                             <p class="cards-produto-descricao">Quentinho, crocante e recheado, assado várias vezes ao dia.</p>
                             <p class="preco">R$ 1,20 </p>
-                            <div class="container-card-btn">
-                                <a href="pedidos.html" class="card-btn">Pedir +</a>
+                            <div class="qtd-controle">
+                                <button onclick="mudarQtd('croissant', -1)">-</button>
+                                <span class="valor" id="qtd-croissant">1</span>
+                                <button onclick="mudarQtd('croissant', 1)">+</button>
                             </div>
+                            <div class="container-card-btn">
+                                <button class="card-btn" onclick="adicionar('Croissant', 1.20, 'croissant' )">Adicionar</button>
+                            </div>
+
                         </div>
                     </article>
 
@@ -169,6 +175,47 @@
                         </div>
                     </article>
 
+                </div>
+
+                <div>
+                    <h3>Seu Carrinho</h3>
+                    <ul id="listaCarrinho">
+                        <li>Seu carrinho está vazio.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resumo Pedido</h3>
+                    <div>
+                        <span>Subtotal:</span>
+                        <span id="subtotal">
+                            R$ 0,00
+                        </span>
+                    </div>
+
+                    <div>
+                        <span>Desconto:</span>
+                        <span id="desconto">- R$ 0,00</span>
+                    </div>
+
+                    <div>
+                        <span>Total:</span>
+                        <span id="total"> R$ 0,00</span>
+                    </div>
+
+                    <div>
+                        <label for="valorPago">Valor pago(R$):</label>
+                        <input id="valorPago" type="number" placeholder="Ex: 50" oninput="calcularTroco()"/>
+                        <div>
+                            <span>Troco:</span>
+                            <span id="troco">R$ 0,00</span>
+                        </div>
+                        <div>
+                            <span>Pontos de Fidelidade:</span>
+                            <span id="pontos">0</span>
+                        </div>
+                        <button onclick="finalizar()">Finalizar Pedido</button>
+                        <div id="mensagemFinal"></div>
+                    </div>
                 </div>
 
             </section>
@@ -212,6 +259,7 @@
             <p>&copy; 2026 Padaria do Sr. José. Todos os direitos reservados. </p>
         </footer>
 
+        <script src="./js/js.js"></script>
     </body>
 
 </html>
